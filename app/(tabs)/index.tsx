@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -17,38 +17,31 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">🏫 Dream School मध्ये आपले स्वागत!</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
+        <ThemedText type="subtitle">📅 कॅलेंडर व्यवस्थापन</ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
+          शैक्षणिक कॅलेंडर, विद्यार्थी आणि शिक्षकांचे वाढदिवस, सुट्टी व्यवस्थापन आणि दैनंदिन 
+          नोंदी यासाठी{' '}<ThemedText type="defaultSemiBold">कॅलेंडर</ThemedText> टॅब वापरा.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+        <ThemedText type="subtitle">📊 गुण व्यवस्थापन</ThemedText>
         <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
+          कक्षा १-८ च्या विद्यार्थ्यांच्या गुणांची प्रविष्टी, PDF रिपोर्ट कार्ड तयार करणे 
+          आणि CCE pattern नुसार assessment साठी{' '}<ThemedText type="defaultSemiBold">गुण</ThemedText> टॅब वापरा.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">🚀 वैशिष्ट्ये</ThemedText>
         <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+          ✅ Firebase realtime database integration{'\n'}
+          ✅ मराठी भाषा समर्थन{'\n'}
+          ✅ Performance analysis आणि ranking{'\n'}
+          ✅ PDF रिपोर्ट generation{'\n'}
+          ✅ शैक्षणिक कॅलेंडर व्यू
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
